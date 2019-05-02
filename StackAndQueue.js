@@ -45,7 +45,7 @@ class Queue{
 }
 
 
-// Implement a stack using properties of Queue 
+// Implement a stack using only data-structure Queue 
 class StackUsingQ {
 	constructor(){
 		this.suq = new Queue();
@@ -74,7 +74,7 @@ class StackUsingQ {
 }
 
 
-// Implement a stack using properties of Queue 
+// Implement a queue using only data-structure Stack 
 class QueueUsingS{
 	constructor(){
 		this.qus = new Stack();
