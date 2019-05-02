@@ -5,16 +5,16 @@ class Stack {
 		this.s = [];
 	}
 	pop (){
-		return s.pop();
+		return this.s.pop();
 	}
 	push(new_element){
 		this.s.push(new_element);
 	}	
 	isempty(){
-		return (!this.q.length>0);
+		return (!this.s.length>0);
 	}
 	getlength(){
-		return this.q.length;
+		return this.s.length;
 	}
 
 }
@@ -74,7 +74,7 @@ class StackUsingQ {
 }
 
 
-//
+// Implement a stack using properties of Queue 
 class QueueUsingS{
 	constructor(){
 		this.qus = new Stack();
@@ -92,13 +92,13 @@ class QueueUsingS{
 		for(var i=0; i<len-1; i++){
 			temps.push(this.qus.pop());
 		}
-		output = this.queue.pop();
+		output = this.qus.pop();
 		while(!temps.isempty()){
-			this.qus.push(temp.pop());
+			this.qus.push(temps.pop());
 		}
 		return output;
 	}
 	isempty(){
-		return (!this.q.length>0);
+		return this.qus.isempty();
 	}
 }
